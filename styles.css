@@ -66,45 +66,13 @@ nav a:hover {
 }
 
 .img {
-  max-width: 500px;
+  max-width: 33.33%;
 }
 
-div {
+div img {
   margin-left: auto;
   margin-right: auto;
   width: 55%
-}
-
-/* Table Formatting */
-table, th, td {
-  border: 1px solid black;
-  font-weight: normal;
-}
-
-table {
-  table-layout: fixed;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-th, td {
-  padding-top: .3em;
-}
-
-td {
-  text-align: center;
-  width: 14.285714%;
-  border-left: 4px solid lightblue;
-}
-
-td:empty {
-  background-color: lightgrey;
-  border-left: 1px solid black;
-}
-
-.highlight {
-  border-left: 4px solid orange;
 }
 
 /*Footer Formatting*/

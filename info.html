@@ -5,6 +5,29 @@
   <meta charset="utf-8">
   <title>Fit for Fun Fitness Club - Info</title>
   <link rel="stylesheet" href="styles.css">
+  <style media="screen">
+    /*Form Formatting*/
+    form {
+      margin-left: auto;
+      margin-right: auto;
+      width: 33.33%;
+    }
+
+    input label {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%
+    }
+
+    input[type="text"] {
+      align-content: right;
+    }
+
+    table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 
 <body>
@@ -19,7 +42,86 @@
     </nav>
   </header>
   <article>
+    <img src="yoga 3.jpeg" alt="Yoga" class="img" style="float:left;">
+    <img src="weights.jpeg" alt="Our Weight Machines" class="img" style="float:right;">
+    <form action="thankyou.html" method="get">
+      <table>
+        <tr>
+          <td><label for="fname">First Name:</label></td>
+          <td><input type="text" name="fname"></td>
+        </tr>
+        <td><label for="lname">Last Name:</label></td>
+        <td><input type="text" name="lname"></td>
+        </tr>
+        <td><label for="email">Email Address:</label></td>
+        <td><input type="email" name="email"></td>
+        </tr>
+        <td><label for="phone">Phone Number:</label></td>
+        <td><input type="tel" name="phone"></td>
+        </tr>
+        <td><label for="reach">Best Way to Reach:</label></td>
+        <td><select name="reach">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="owl">Owl</option>
+            <option value="floo">Floo Network</option>
+          </select></td>
+        </tr>
+      </table>
+      <p style="margin-bottom:4px;text-align:center;">Classes to enroll in:</p>
+      <table>
+        <tr>
+          <td><input type="checkbox" name="classes1" value="Cross-Training"></td>
+          <td><label for="classes1">Cross-Training</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes2" value="Advanced Cross-Training"></td>
+          <td><label for="classes2">Advanced Cross-Training</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes3" value="Sprinting"></td>
+          <td><label for="classes3">Sprinting</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes4" value="Body Pump"></td>
+          <td><label for="classes4">Body Pump</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes5" value="Body Combat"></td>
+          <td><label for="classes5">Body Combat</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes6" value="MixxedFIT"></td>
+          <td><label for="classes6">MixxedFIT</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes7" value="Spin"></td>
+          <td><label for="classes7">Spin</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes8" value="Step Interval"></td>
+          <td><label for="classes8">Step Interval</label></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="classes9" value="Zumba"></td>
+          <td><label for="classes9">Zumba</label></td>
+        </tr>
+        <tr>
+      </table>
+      <p style="margin-bottom:4px; text-align:center;">Morning or Evening classes?</p>
+      <table>
+        <tr>
+          <td><input type="radio" name="am" value="AM"></td>
+          <td><label for="am">Morning (AM)</label></td>
+          <td><input type="radio" name="pm" value="PM"></td>
+          <td><label for="pm">Evening (PM)</label></td>
+        </tr>
+      </table><br>
+      <div style="text-align:center;">
+        <input type="submit">
+      </div>
 
+    </form>
   </article>
   <footer>
     <p class="right">bc0937119@otc.edu &#169; 2/1/21</p>
