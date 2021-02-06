@@ -5,29 +5,6 @@
   <meta charset="utf-8">
   <title>Fit for Fun Fitness Club - Info</title>
   <link rel="stylesheet" href="styles.css">
-  <style media="screen">
-    /*Form Formatting*/
-    form {
-      margin-left: auto;
-      margin-right: auto;
-      width: 33.33%;
-    }
-
-    input label {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%
-    }
-
-    input[type="text"] {
-      align-content: right;
-    }
-
-    table {
-      margin-left: auto;
-      margin-right: auto;
-    }
-  </style>
 </head>
 
 <body>
@@ -41,91 +18,66 @@
       </ul>
     </nav>
   </header>
+
   <article>
     <img src="yoga 3.jpeg" alt="Yoga" class="img" style="float:left;">
     <img src="weights.jpeg" alt="Our Weight Machines" class="img" style="float:right;">
+
     <form action="thankyou.html" method="get">
-      <table>
-        <tr>
-          <td><label for="fname">First Name:</label></td>
-          <td><input type="text" name="fname"></td>
-        </tr>
-        <tr>
-          <td><label for="lname">Last Name:</label></td>
-          <td><input type="text" name="lname"></td>
-        </tr>
-        <tr>
-          <td><label for="email">Email Address:</label></td>
-          <td><input type="email" name="email"></td>
-        </tr>
-        <tr>
-          <td><label for="phone">Phone Number:</label></td>
-          <td><input type="tel" name="phone"></td>
-        </tr>
-        <tr>
-          <td><label for="reach">Best Way to Reach:</label></td>
-          <td><select name="reach">
-              <option value="email">Email</option>
-              <option value="phone">Phone</option>
-              <option value="owl">Owl</option>
-              <option value="floo">Floo Network</option>
-            </select></td>
-        </tr>
-      </table>
-      <p style="margin-bottom:4px;text-align:center;">Classes to enroll in:</p>
-      <table>
-        <tr>
-          <td><input type="checkbox" name="classes1" value="Cross-Training"></td>
-          <td><label for="classes1">Cross-Training</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes2" value="Advanced Cross-Training"></td>
-          <td><label for="classes2">Advanced Cross-Training</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes3" value="Sprinting"></td>
-          <td><label for="classes3">Sprinting</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes4" value="Body Pump"></td>
-          <td><label for="classes4">Body Pump</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes5" value="Body Combat"></td>
-          <td><label for="classes5">Body Combat</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes6" value="MixxedFIT"></td>
-          <td><label for="classes6">MixxedFIT</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes7" value="Spin"></td>
-          <td><label for="classes7">Spin</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes8" value="Step Interval"></td>
-          <td><label for="classes8">Step Interval</label></td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="classes9" value="Zumba"></td>
-          <td><label for="classes9">Zumba</label></td>
-        </tr>
-      </table>
-      <p style="margin-bottom:4px; text-align:center;">Morning or Evening classes?</p>
-      <table>
-        <tr>
-          <td><input type="radio" name="time" value="AM"></td>
-          <td><label for="am">Morning (AM)</label></td>
-          <td><input type="radio" name="time" value="PM"></td>
-          <td><label for="pm">Evening (PM)</label></td>
-        </tr>
-      </table><br>
+      <fieldset>
+        <legend>Contact Information</legend>
+        <label for="fname">First Name:
+          <input autofocus type="text" name="fname" id="fname" required placeholder="First Name"></label>
+        <label for="lname">Last Name:
+          <input type="text" name="lname" id="lname" required placeholder="Last Name"></label>
+        <label for="email">Email Address:
+          <input type="email" name="email" id="email" required placeholder="Email"></label>
+        <label for="phone">Phone Number:
+          <input type="tel" name="phone" id="phone" required placeholder="Phone"></label>
+        <label for="reach">Best Way to Reach:
+          <select name="reach">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="owl">Owl</option>
+            <option value="floo">Floo Network</option>
+          </select></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Classes to enroll in</legend>
+        <label for="classes1">Cross-Training
+          <input type="checkbox" name="classes1" value="Cross-Training"></label>
+        <label for="classes2">Advanced Cross-Training
+          <input type="checkbox" name="classes2" value="Advanced Cross-Training"></label>
+        <label for="classes3">Sprinting
+          <input type="checkbox" name="classes3" value="Sprinting"></label>
+        <label for="classes4">Body Pump
+          <input type="checkbox" name="classes4" value="Body Pump"></label>
+        <label for="classes5">Body Combat
+          <input type="checkbox" name="classes5" value="Body Combat"></label>
+        <label for="classes6">MixxedFIT
+          <input type="checkbox" name="classes6" value="MixxedFIT"></label>
+        <label for="classes7">Spin
+          <input type="checkbox" name="classes7" value="Spin"></label>
+        <label for="classes8">Step Interval
+          <input type="checkbox" name="classes8" value="Step Interval"></label>
+        <label for="classes9">Zumba
+          <input type="checkbox" name="classes9" value="Zumba"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Morning or Evening classes?</legend>
+        <label for="am" style="float:left;">Morning (AM)
+          <input type="radio" name="time" value="AM"></label>
+        <label for="pm" style="text-align:center;">Evening (PM)
+          <input type="radio" name="time" value="PM"></label>
+      </fieldset><br>
       <div style="text-align:center;">
         <input type="submit">
       </div>
-
     </form>
   </article>
+
   <footer>
     <p class="right">bc0937119@otc.edu &#169; 2/1/21</p>
     <p>Bronson Carder 417-496-9924</p>
