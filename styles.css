@@ -120,10 +120,17 @@ label {
   position: relative;
 }
 
-input {
+input[type="text"], input[type="email"], input[type="tel"] {
   position: absolute;
-  left: 40%;
+  left: 33%;
   width: 58%
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -13%;
+  width: 150%;
+  margin: 0px;
 }
 
 input[type="submit"] {
@@ -135,7 +142,6 @@ input[type="radio"] {
   position: initial;
   display: inline-block;
   width: initial;
-  text-align:center;
 }
 
 /*Footer Formatting*/

@@ -35,12 +35,13 @@
         <label for="phone">Phone Number:
           <input type="tel" name="phone" id="phone" required placeholder="Phone"></label>
         <label for="reach">Best Way to Reach:
+<div style="float:right; width:50%">
           <select name="reach">
             <option value="email">Email</option>
             <option value="phone">Phone</option>
             <option value="owl">Owl</option>
             <option value="floo">Floo Network</option>
-          </select></label>
+          </select></div></label>
       </fieldset>
 
       <fieldset>
@@ -66,11 +67,11 @@
       </fieldset>
 
       <fieldset>
-        <legend>Morning or Evening classes?</legend>
-        <label for="am" style="float:left;">Morning (AM)
-          <input type="radio" name="time" value="AM"></label>
-        <label for="pm" style="text-align:center;">Evening (PM)
-          <input type="radio" name="time" value="PM"></label>
+        <legend>Morning or Evening?</legend>
+        <label for="am" style="float:left; width:50%">Morning (AM)
+          <input type="radio" name="time" id="am" value="AM"></label>
+        <label for="pm" style="float:right; width:50%">Evening (PM)
+          <input type="radio" name="time" id="pm" value="PM"></label>
       </fieldset><br>
       <div style="text-align:center;">
         <input type="submit">
